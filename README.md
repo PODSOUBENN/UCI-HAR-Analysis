@@ -3,7 +3,7 @@ Purpose of run_analysis.R script
 
 This script has been developed on the instructions of Coursera "Getting and Cleaning Data" course project.
 
-This script (Steps of ""Loading"" and "construction of mydf" dataset are melt in code for memory optimization, but for comprehension separated in 2 parts here) :
+Steps of "Loading" and "construction of mydf" dataset are melt in code for memory optimization, but for comprehension separated in 2 parts here :
 
 ###1/ Load datasets (Except brute data : "Inertial Signals")
 *from here : "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"*
@@ -12,7 +12,9 @@ This script (Steps of ""Loading"" and "construction of mydf" dataset are melt in
 >
 > > Composed of 17 features (In reality, data contain 33 features, because features XYZ are separate in 3 features), 17 function have been applied on each feature
 >
-> > Each observation is an analysis on a fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window)
+> > Each observation is an analysis on a fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window) of the acceleration signal captured by a smartphone weared by one of the subject
+>
+> > Each observation is attached to the subject wearing the smartphone and an action label  : LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.
 
 **Reference tables :**
 
@@ -38,7 +40,7 @@ This script (Steps of ""Loading"" and "construction of mydf" dataset are melt in
 - 69 Columns : 33 mean measurements / 33 std measurements / y / subject / ActivityLabel (Label attached to y value)
 - 10299 lines : for perspective only, 30 subjects with an average of 343 events by subject
 
-**In details, steps to construct dataset mydf :**
+**In details, steps to construct dataset "mydf"" :**
 
 - Same process for test and train :
 
@@ -121,7 +123,7 @@ ActivityLabel
 ```
   
 ### 3/ Construct "mydf_tidy" data.frame
-- In details the data catalog of dataset "mydf_tidy" :
+- In details, steps to construct dataset "mydf_tidy" :
 
     - based on mydf, apply a mean function on each measurements columns by "y" / "subject" / "ActivityLabel" columns
     - "pivot" measurements columns to row (Measurement=Column names of measurements columns, value=Value of measurements columns)
