@@ -1,9 +1,11 @@
 Purpose of run_analysis.R script
 ------------------------------------------------------
 
-This script (Steps of ""Loading"" and "construction of mydf" dataset are melt in code for memory optimization, but for comprehension) :
+This script has been developed on the instructions of Coursera "Getting and Cleaning Data" course project.
 
-###1/ Load datasets (Except brute data) : "Inertial Signals"
+This script (Steps of ""Loading"" and "construction of mydf" dataset are melt in code for memory optimization, but for comprehension separated in 2 parts here) :
+
+###1/ Load datasets (Except brute data : "Inertial Signals")
 *from here : "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"*
 
 > For understanding the data :
