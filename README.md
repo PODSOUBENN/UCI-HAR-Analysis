@@ -131,41 +131,43 @@ ActivityLabel
 
 - Data catalog of dataset "mydf_tidy" :
 ```
-subject
-ActivityLabel
-func
-fBodyAcc-X
-fBodyAcc-Y
-fBodyAcc-Z
-fBodyAccJerk-X
-fBodyAccJerk-Y
-fBodyAccJerk-Z
-fBodyAccMag
-fBodyBodyAccJerkMag
-fBodyBodyGyroJerkMag
-fBodyBodyGyroMag
-fBodyGyro-X
-fBodyGyro-Y
-fBodyGyro-Z
-tBodyAcc-X
-tBodyAcc-Y
-tBodyAcc-Z
-tBodyAccJerk-X
-tBodyAccJerk-Y
-tBodyAccJerk-Z
-tBodyAccJerkMag
-tBodyAccMag
-tBodyGyro-X
-tBodyGyro-Y
-tBodyGyro-Z
-tBodyGyroJerk-X
-tBodyGyroJerk-Y
-tBodyGyroJerk-Z
-tBodyGyroJerkMag
-tBodyGyroMag
-tGravityAcc-X
-tGravityAcc-Y
-tGravityAcc-Z
-tGravityAccMag
+Key columns :
+  subject: The subject who performed the activity for each window sample. Its range is from 1 to 30.
+  ActivityLabel: Activity Name. List : LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS.
+  func: function apply to features. List : mean__, avg__
+Features columns : Born min=-1 to max=1
+  fBodyAcc-X
+  fBodyAcc-Y
+  fBodyAcc-Z
+  fBodyAccJerk-X
+  fBodyAccJerk-Y
+  fBodyAccJerk-Z
+  fBodyAccMag
+  fBodyBodyAccJerkMag
+  fBodyBodyGyroJerkMag
+  fBodyBodyGyroMag
+  fBodyGyro-X
+  fBodyGyro-Y
+  fBodyGyro-Z
+  tBodyAcc-X
+  tBodyAcc-Y
+  tBodyAcc-Z
+  tBodyAccJerk-X
+  tBodyAccJerk-Y
+  tBodyAccJerk-Z
+  tBodyAccJerkMag
+  tBodyAccMag
+  tBodyGyro-X
+  tBodyGyro-Y
+  tBodyGyro-Z
+  tBodyGyroJerk-X
+  tBodyGyroJerk-Y
+  tBodyGyroJerk-Z
+  tBodyGyroJerkMag
+  tBodyGyroMag
+  tGravityAcc-X
+  tGravityAcc-Y
+  tGravityAcc-Z
+  tGravityAccMag
 ```
 
